@@ -8,7 +8,7 @@ rule LockBit {
             $string2 = "sql" wide
             $string3 = "msexchange" wide
       condition:
-            $string1 and $string2 and $string3
+            all of them
 }
 
 
