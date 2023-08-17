@@ -1,3 +1,17 @@
+rule LockBit {
+      meta:
+            description = "LockBit Black"
+            author = "ojs"
+            md5 = "24AE0FB3100A781A17F550CEF3A2694C"
+      strings:
+            $string1 = "vss" wide
+            $string2 = "sql" wide
+            $string3 = "msexchange" wide
+      condition:
+            $string1 and $string2 and $string3
+}
+
+
 rule APT10_ANEL_InitRoutine {
       meta:
         description = "ANEL malware"
