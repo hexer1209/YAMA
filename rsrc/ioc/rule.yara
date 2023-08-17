@@ -4,9 +4,7 @@ rule LockBit {
             author = "ojs"
             md5 = "24AE0FB3100A781A17F550CEF3A2694C"
       strings:
-            $string1 = "vss" wide
-            $string2 = "sql" wide
-            $string3 = "msexchange" wide
+            $string1 = { 6D 00 73 00 65 00 78 00 63 00 68 00 61 00 6E 00 67 00 65 00 }
       condition:
             all of them
 }
